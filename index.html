@@ -1,254 +1,118 @@
 <!doctype html>
-<html lang="en" data-lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f7f3ea" />
     <meta name="description" content="Join the student-led EdUHK Lacrosse Interest Group. Learn the sport, meet teammates, and help build towards an EdUHK lacrosse team for 2026–27." />
     <title>EdUHK Lacrosse Interest Group</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet" />
-
-    <link rel="icon" href="assets/img/emblem.png" />
-    <link rel="apple-touch-icon" href="assets/img/emblem.png" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body data-page="home">
-<!--H:START-->
-    <a class="skip-link" href="#main-content" data-i18n="common.skip">Skip to content</a>
-
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="index.html" data-i18n-attr="aria-label:common.brandHome">
-        <img class="brand-mark" src="assets/img/emblem.png" alt="" width="500" height="500" />
-        <span class="brand-name"><span data-i18n="common.brand.name">EdUHK LACROSSE</span><small data-i18n="common.brand.sub">INTEREST GROUP</small></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-i18n-attr="aria-label:common.openNav">
-        <span></span><span></span><span class="menu-label" data-i18n="common.menu">Menu</span>
-      </button>
-
-      <nav class="primary-navigation" id="primary-navigation" data-i18n-attr="aria-label:common.mainNav">
-          <a href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
-          <a href="about.html" data-i18n="nav.about">About</a>
-          <a href="training.html" data-i18n="nav.training">Training</a>
-          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
-          <a href="join.html" data-i18n="nav.join">Join</a>
+      <a class="brand" href="#home" aria-label="EdUHK Lacrosse Interest Group home"><img class="brand-mark" src="assets/img/emblem.png" alt="" /><span class="brand-name">EdUHK LACROSSE<small>INTEREST GROUP</small></span></a>
+      <!-- Approved logo placement: insert an authorised EdUHK or group logo here only after approval. No official logo is used on this site. -->
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span><span class="menu-label">Menu</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#goal">Our Goal</a><a href="#training">Training</a><a href="#activities">Activities</a><a href="#join">Join Us</a><a href="#contact">Contact</a>
       </nav>
-
-      <div class="language-switcher" role="group" data-i18n-attr="aria-label:common.lang.label">
-        <button type="button" data-language="en" aria-pressed="true" lang="en">EN</button>
-        <button type="button" data-language="zh-hant" aria-pressed="false" lang="zh-Hant">繁中</button>
-        <button type="button" data-language="zh-hans" aria-pressed="false" lang="zh-Hans">简中</button>
+      <div class="language-switcher" role="group" aria-label="Choose language">
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+        <button type="button" data-language="zh-hant" aria-pressed="false">繁中</button>
+        <button type="button" data-language="zh-hans" aria-pressed="false">简中</button>
       </div>
     </header>
-<!--H:END-->
 
     <main id="main-content">
-      <!-- ============================= HERO ============================= -->
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="hero-pattern" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="home.hero.eyebrow">Student-led · Open to all levels</span></p>
-          <p class="hero-label" data-i18n="home.hero.label">THE EDUCATION UNIVERSITY OF HONG KONG</p>
-          <h1 id="hero-title" data-i18n="home.hero.title">Let’s build<br />EdUHK lacrosse<br /><span>together.</span></h1>
-          <p class="hero-intro" data-i18n="home.hero.intro">We are a group of passionate EdUHK students working towards forming a lacrosse sports team during the 2026–27 academic year.</p>
-          <p class="hero-detail" data-i18n="home.hero.detail">We currently have 7 committed players and are aiming to grow to 18 committed players starting from October 2026.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="join.html"><span data-i18n="cta.join">Join the Interest Group</span> <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="training.html"><span data-i18n="cta.training">View Training Times</span> <span aria-hidden="true">↓</span></a>
-          </div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Student-led · Open to all levels</p>
+          <p class="hero-label">THE EDUCATION UNIVERSITY OF HONG KONG</p>
+          <h1 id="hero-title">Let’s build<br />EdUHK lacrosse<br /><span>together.</span></h1>
+          <p class="hero-intro">We are a group of passionate EdUHK students working towards forming a lacrosse sports team during the 2026–27 academic year.</p>
+          <p class="hero-detail">We currently have 7 committed players and are aiming to grow to 18 committed players starting from October 2026.</p>
+          <div class="hero-actions"><a class="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScw_G3XYBwm4fAk4PmHPFVujRkLZhm_XG7UVZ4OKYPaZ5DOIA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Join the Interest Group <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#training">View Training Times <span aria-hidden="true">↓</span></a></div>
         </div>
         <div class="hero-visual">
-          <img class="hero-emblem" src="assets/img/emblem.png" alt="" width="500" height="500" />
+          <img class="hero-emblem" src="assets/img/emblem.png" alt="EdUHK Lacrosse Emblemcrest showing the green-and-orange lacrosse crest" />
         </div>
-        <div class="hero-bottom">
-          <span class="status-badge"><span class="status-dot"></span> <span data-i18n="home.hero.status">7 committed players · Target: 18</span></span>
-          <a class="scroll-cue" href="#about-teaser"><span class="scroll-cue-line"></span> <span data-i18n="home.hero.scroll">SCROLL TO EXPLORE</span></a>
-        </div>
+        <div class="hero-bottom"><span class="status-badge"><span class="status-dot"></span> 7 committed players <b>·</b> Target: 18</span><a class="scroll-cue" href="#about"><span class="scroll-cue-line"></span> SCROLL TO EXPLORE</a></div>
       </section>
 
-      <!-- ========================== 01 · ABOUT ========================== -->
-      <section class="section" id="about-teaser" aria-labelledby="teaser-title">
-        <div class="section-heading reveal">
-          <p class="section-number">01 / <span data-i18n="home.about.tag">ABOUT</span></p>
-          <div>
-            <p class="eyebrow" data-i18n="home.about.eyebrow">A new student community</p>
-            <h2 id="teaser-title" data-i18n="home.about.title">Who we are</h2>
-          </div>
-        </div>
-        <div class="about-copy reveal">
-          <p class="lead-copy" data-i18n="home.about.lead">We are a group of passionate students at The Education University of Hong Kong who are interested in lacrosse, physical activity, teamwork, and student-led sport.</p>
-          <div class="about-copy-secondary">
-            <p data-i18n="home.about.more">Some of us have played before. Most of us had never picked up a stick. Both are welcome.</p>
-          </div>
-        </div>
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal"><p class="section-number">01 / ABOUT</p><div><p class="eyebrow">A new student community</p><h2 id="about-title">Who we are</h2></div></div>
+        <div class="about-copy reveal"><p class="lead-copy">We are a group of passionate students at The Education University of Hong Kong who are interested in lacrosse, physical activity, teamwork, and student-led sport.</p><div class="about-copy-secondary"><p>Some of us have previous playing experience, while others are discovering lacrosse for the first time. We are building a welcoming community where students can learn the sport, develop their skills, stay active, and connect with others.</p><p>Our longer-term aim is to establish an EdUHK lacrosse sports team during the 2026–27 academic year.</p></div></div>
         <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true">01</span>
-            <p class="card-label" data-i18n="home.about.card1.label">START HERE</p>
-            <h3 data-i18n="home.about.card1.title">Learn</h3>
-            <p data-i18n="home.about.card1.text">Develop fundamental lacrosse skills, game understanding, movement ability, and confidence.</p>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true">02</span>
-            <p class="card-label" data-i18n="home.about.card2.label">GET MOVING</p>
-            <h3 data-i18n="home.about.card2.title">Play</h3>
-            <p data-i18n="home.about.card2.text">Take part in regular practices, small-sided games, friendly activities, and future inter-university opportunities.</p>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true">03</span>
-            <p class="card-label" data-i18n="home.about.card3.label">GROW TOGETHER</p>
-            <h3 data-i18n="home.about.card3.title">Build</h3>
-            <p data-i18n="home.about.card3.text">Help grow a committed student community and work together towards forming an EdUHK lacrosse team.</p>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </article>
-        </div>
-        <div class="section-more reveal">
-          <p data-i18n="home.about.moreNote">Read how the group started, what we stand for, and where we are heading.</p>
-          <a class="text-link" href="about.html"><span data-i18n="home.about.moreLink">More about the group</span> <span aria-hidden="true">→</span></a>
+          <article class="feature-card reveal"><span class="feature-icon icon-learn" aria-hidden="true">01</span><p class="card-label">START HERE</p><h3>Learn</h3><p>Develop fundamental lacrosse skills, game understanding, movement ability, and confidence.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+          <article class="feature-card reveal"><span class="feature-icon icon-play" aria-hidden="true">02</span><p class="card-label">GET MOVING</p><h3>Play</h3><p>Take part in regular practices, small-sided games, friendly activities, and future inter-university opportunities.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+          <article class="feature-card reveal"><span class="feature-icon icon-build" aria-hidden="true">03</span><p class="card-label">GROW TOGETHER</p><h3>Build</h3><p>Help grow a committed student community and work together towards forming an EdUHK lacrosse team.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
         </div>
       </section>
 
-      <!-- =========================== 02 · GOAL ========================== -->
-      <section class="goal-section" aria-labelledby="goal-title">
+      <section class="team-gallery" aria-labelledby="team-gallery-title">
+        <div class="gallery-inner">
+          <div class="gallery-heading reveal"><p class="section-number">FIELD NOTES / 01</p><p class="eyebrow">OUR LACROSSE COMMUNITY</p><h2 id="team-gallery-title">Learning, playing<br /><em>and growing together.</em></h2></div>
+          <div class="team-photo-grid">
+            <figure class="team-photo team-photo-feature reveal"><img src="assets/img/gallery/01.jpg" alt="EdUHK lacrosse team posing together on the field after a competition" loading="lazy" /><figcaption><span>TOGETHER ON THE FIELD</span><b>One team. Many stories.</b></figcaption></figure>
+            <figure class="team-photo reveal"><img src="assets/img/gallery/09.jpg" alt="Lacrosse players huddle together before a game" loading="lazy" /><figcaption><span>TEAM CULTURE</span><b>Rise together.</b></figcaption></figure>
+            <figure class="team-photo reveal"><img src="assets/img/gallery/13.jpg" alt="EdUHK lacrosse players gathering for a team talk on the field" loading="lazy" /><figcaption><span>GAME DAY</span><b>Earned together.</b></figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="goal-section" id="goal" aria-labelledby="goal-title">
         <div class="goal-inner">
-          <div class="goal-copy reveal">
-            <p class="section-number section-number-light">02 / <span data-i18n="home.goal.tag">OUR GOAL</span></p>
-            <p class="eyebrow eyebrow-light" data-i18n="home.goal.eyebrow">The journey to 2026–27</p>
-            <h2 id="goal-title" data-i18n="home.goal.title">Help us<br />build the <em>team.</em></h2>
-            <p data-i18n="home.goal.p1">We are currently building the foundation of the group. Every committed player brings us closer to forming an EdUHK lacrosse sports team in the 2026–27 academic year.</p>
-            <p class="target-period"><span class="target-pulse"></span> <span data-i18n="home.goal.period">Growing from October 2026</span></p>
-          </div>
-          <div class="progress-panel reveal">
-            <div class="progress-header"><span data-i18n="home.goal.progressLabel">PLAYER PROGRESS</span><span aria-hidden="true">2026–27</span></div>
-            <div class="progress-count">
-              <strong>7</strong><span data-i18n="home.goal.of">of</span><strong>18</strong><span data-i18n="home.goal.committed">committed players</span>
-            </div>
-            <div class="progress-track" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="18" data-i18n-attr="aria-label:home.goal.progressAria">
-              <span class="progress-fill"></span>
-            </div>
-            <div class="progress-caption"><span data-i18n="home.goal.capLeft">7 committed</span><span data-i18n="home.goal.capRight">11 to go</span></div>
-            <p class="progress-note" data-i18n="home.goal.note">Help us turn a shared interest into a team.</p>
-            <a class="button button-light" href="join.html"><span data-i18n="cta.become">Become One of the 18</span> <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="stats-row">
-            <article class="stat-card reveal"><strong>7</strong><span data-i18n="home.goal.stat1">Current committed players</span></article>
-            <article class="stat-card reveal"><strong>18</strong><span data-i18n="home.goal.stat2">Target number of committed players</span></article>
-            <article class="stat-card reveal"><strong>26<span>–27</span></strong><span data-i18n="home.goal.stat3">Academic year goal</span></article>
-          </div>
+          <div class="goal-copy reveal"><p class="section-number section-number-light">02 / OUR GOAL</p><p class="eyebrow eyebrow-light">The journey to 2026–27</p><h2 id="goal-title">Help us<br />build the <em>team.</em></h2><p>We are currently building the foundation of the group. Every committed player brings us closer to forming an EdUHK lacrosse sports team in the 2026–27 academic year.</p><p class="target-period"><span class="target-pulse"></span> Growing from October 2026</p></div>
+          <div class="progress-panel reveal"><div class="progress-header"><span>PLAYER PROGRESS</span><span>01 / 01</span></div><div class="progress-count"><strong>7</strong><span>of</span><strong>18</strong><span>committed players</span></div><div class="progress-track" role="progressbar" aria-label="Committed players towards the target of 18" aria-valuenow="7" aria-valuemin="0" aria-valuemax="18" aria-valuetext="7 of 18 committed players"><span class="progress-fill"></span></div><div class="progress-caption"><span>7 committed</span><span>11 to go</span></div><p class="progress-note">Help us turn a shared interest into a team.</p><a class="button button-light" href="#join">Become One of the 18 <span aria-hidden="true">↗</span></a></div>
+          <div class="stats-row"><article class="stat-card reveal"><strong>7</strong><span>Current committed players</span></article><article class="stat-card reveal"><strong>18</strong><span>Target number of committed players</span></article><article class="stat-card reveal"><strong>26<span>–27</span></strong><span>Academic year goal</span></article></div>
         </div>
       </section>
 
-      <!-- ========================= 03 · GALLERY ======================== -->
-      <section class="home-block" aria-labelledby="gallery-teaser-title">
-        <div class="home-block-inner">
-          <div class="section-heading reveal">
-            <p class="section-number">03 / <span data-i18n="home.gallery.tag">GALLERY</span></p>
-            <div>
-              <p class="eyebrow" data-i18n="home.gallery.eyebrow">Field notes</p>
-              <h2 id="gallery-teaser-title" data-i18n="home.gallery.title">Learning, playing<br /><em>and growing together.</em></h2>
-            </div>
-          </div>
-          <div class="preview-grid reveal">
-            <a class="photo-cell" href="assets/img/gallery/01.jpg"><img src="assets/img/gallery/thumbs/01.jpg" alt="" data-i18n-attr="alt:gallery.alt.group" loading="lazy" width="480" height="360" /></a>
-            <a class="photo-cell" href="assets/img/gallery/07.jpg"><img src="assets/img/gallery/thumbs/07.jpg" alt="" data-i18n-attr="alt:gallery.alt.huddle" loading="lazy" width="480" height="360" /></a>
-            <a class="photo-cell" href="assets/img/gallery/27.jpg"><img src="assets/img/gallery/thumbs/27.jpg" alt="" data-i18n-attr="alt:gallery.alt.banner" loading="lazy" width="480" height="360" /></a>
-            <a class="photo-cell" href="assets/img/gallery/02.jpg"><img src="assets/img/gallery/thumbs/02.jpg" alt="" data-i18n-attr="alt:gallery.alt.group" loading="lazy" width="480" height="360" /></a>
-            <a class="photo-cell" href="assets/img/gallery/13.jpg"><img src="assets/img/gallery/thumbs/13.jpg" alt="" data-i18n-attr="alt:gallery.alt.huddle" loading="lazy" width="480" height="360" /></a>
-          </div>
-          <div class="section-more reveal">
-            <p data-i18n="home.gallery.more">Thirty-two photographs from the 2025–26 All Hong Kong University Lacrosse Competition.</p>
-            <a class="text-link" href="gallery.html"><span data-i18n="home.gallery.moreLink">Open the full gallery</span> <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
+      <section class="message-section section" aria-labelledby="message-title">
+        <div class="message-mark" aria-hidden="true">“</div><div class="message-content reveal"><p class="eyebrow">A note from our student organisers</p><h2 id="message-title">A place to learn<br />and <em>belong.</em></h2><p>The EdUHK Lacrosse Interest Group is a student-led community built around participation, development, and connection. Whether you are picking up a stick for the first time or already have lacrosse experience, you are welcome to join us. Together, we hope to create an active and supportive environment and build towards representing EdUHK as a lacrosse team.</p><blockquote>“Seven players have started the journey. Help us reach eighteen.”</blockquote><span class="message-attribution">MESSAGE FROM THE STUDENT ORGANISING GROUP</span></div>
       </section>
 
-      <!-- ======================== 04 · TRAINING ======================== -->
-      <section class="home-block" aria-labelledby="training-teaser-title">
-        <div class="home-block-inner">
-          <div class="section-heading reveal">
-            <p class="section-number">04 / <span data-i18n="home.training.tag">TRAINING</span></p>
-            <div>
-              <p class="eyebrow" data-i18n="home.training.eyebrow">Meet us on the field</p>
-              <h2 id="training-teaser-title" data-i18n="home.training.title">Regular training<br />sessions</h2>
-            </div>
-          </div>
-          <div class="strip-grid reveal">
-            <a class="strip-card" href="training.html">
-              <span class="day-label" data-i18n="training.mon.day">MONDAY</span>
-              <strong>18:30–20:30</strong>
-              <span data-i18n="training.venue">Block E Artificial Turf</span>
-            </a>
-            <a class="strip-card" href="training.html">
-              <span class="day-label" data-i18n="training.thu.day">THURSDAY</span>
-              <strong>10:30–12:30</strong>
-              <span data-i18n="training.venue">Block E Artificial Turf</span>
-            </a>
-          </div>
-          <div class="section-more reveal">
-            <p data-i18n="home.training.more">Please contact us before attending — schedules, venues, and equipment arrangements may change.</p>
-            <a class="text-link" href="training.html"><span data-i18n="home.training.moreLink">Training details</span> <span aria-hidden="true">→</span></a>
-          </div>
+      <section class="section training-section" id="training" aria-labelledby="training-title">
+        <div class="section-heading reveal"><p class="section-number">03 / TRAINING</p><div><p class="eyebrow">Meet us on the field</p><h2 id="training-title">Regular training<br />sessions</h2></div></div>
+        <p class="section-intro reveal">We currently organise regular training sessions for students who want to learn, practise, and develop their lacrosse skills. Please contact us before attending because schedules, venues, equipment arrangements, and session details may change.</p>
+        <div class="schedule-grid">
+          <article class="schedule-card reveal"><div class="schedule-top"><span class="day-label">MONDAY</span><span class="schedule-icon" aria-hidden="true">↗</span></div><p class="schedule-time">18:30<span>–</span>20:30</p><div class="schedule-location"><span class="location-pin" aria-hidden="true">⌖</span><div><strong>Block E Artificial Turf</strong><span>EdUHK campus</span></div></div><div class="arrival-note"><strong>ARRIVAL / 18:20</strong><p>Please gather 10 minutes earlier at the Block E Sports Complex Lower Platform, LP Floor, to collect equipment before moving to the artificial turf.</p></div><p class="session-description">Fundamental skills, passing, catching, movement, shooting, team concepts, and small-sided games.</p></article>
+          <article class="schedule-card schedule-card-green reveal"><div class="schedule-top"><span class="day-label">THURSDAY</span><span class="schedule-icon" aria-hidden="true">↗</span></div><p class="schedule-time">10:30<span>–</span>12:30</p><div class="schedule-location"><span class="location-pin" aria-hidden="true">⌖</span><div><strong>Block E Artificial Turf</strong><span>EdUHK campus</span></div></div><div class="arrival-note"><strong>ARRIVAL / 10:20</strong><p>Please gather 10 minutes earlier at the Block E Sports Complex Lower Platform, LP Floor, to collect equipment before moving to the artificial turf.</p></div><p class="session-description">Skills development, game understanding, fitness, positional practice, and match-based activities.</p></article>
         </div>
+        <aside class="training-foot reveal" aria-label="Training arrangements"><p><strong>Plan to join us?</strong> Training times and arrangements may be adjusted depending on campus facilities, weather, academic commitments, equipment availability, and group needs. Contact us before attending your first session.</p><a class="text-link" href="mailto:eduhk.lacrosse@gmail.com?subject=Question%20About%20Lacrosse%20Training">Ask About Training <span aria-hidden="true">↗</span></a></aside>
       </section>
 
-      <!-- =========================== CTA BAND ========================== -->
-      <section class="cta-band" aria-labelledby="cta-title">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-title" data-i18n="home.cta.title">Ready to pick up a stick?</h2>
-            <p data-i18n="home.cta.text">Interested in trying lacrosse, returning to the sport, or helping us build the first EdUHK lacrosse team? Contact us and join the journey.</p>
-          </div>
-          <div class="cta-band-actions">
-            <a class="button button-light" href="join.html"><span data-i18n="cta.join">Join the Interest Group</span> <span aria-hidden="true">↗</span></a>
-            <a class="button button-dark-outline" href="https://wa.me/85255079333" target="_blank" rel="noopener noreferrer"><span data-i18n="cta.whatsapp">Contact Us on WhatsApp</span> <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-      </section>
+      <section class="beginner-section" aria-labelledby="beginner-title"><div class="beginner-inner"><div class="beginner-copy reveal"><p class="section-number section-number-light">ALL EXPERIENCE LEVELS</p><p class="eyebrow eyebrow-light">Curious about a new sport?</p><h2 id="beginner-title">New to<br />lacrosse<span>?</span></h2><p>No previous lacrosse experience is required. We welcome students who are curious about trying a new sport, as well as students who have played lacrosse before. Sessions will introduce the basic rules, equipment, movement patterns, and core skills step by step.</p><div class="beginner-actions"><a class="button button-light" href="#join">I’m New to Lacrosse <span aria-hidden="true">↗</span></a><a class="button button-dark-outline" href="#join">I Have Playing Experience <span aria-hidden="true">↗</span></a></div></div><div class="steps-list"><article class="step-item reveal"><span>01</span><div><h3>Contact us</h3><p>Send a message or complete the interest form.</p></div></article><article class="step-item reveal"><span>02</span><div><h3>Attend a session</h3><p>Meet the group and take part at your own pace.</p></div></article><article class="step-item reveal"><span>03</span><div><h3>Learn and commit</h3><p>Develop your skills and help us work towards forming the team.</p></div></article></div></div></section>
+
+      <section class="section activities-section" id="activities" aria-labelledby="activities-title"><div class="section-heading reveal"><p class="section-number">04 / ACTIVITIES</p><div><p class="eyebrow">A little bit of everything</p><h2 id="activities-title">What we do</h2></div></div><div class="activity-grid">
+        <article class="activity-card reveal"><span class="activity-icon" aria-hidden="true">✳</span><span class="activity-tag">BEGINNER</span><h3>Beginner Lacrosse Sessions</h3><p>Start with the basics in a supportive setting. No experience needed—just bring your curiosity.</p></article>
+        <article class="activity-card reveal"><span class="activity-icon" aria-hidden="true">⌁</span><span class="activity-tag">SKILLS</span><h3>Stick Skills and Passing</h3><p>Build control and confidence through progressive catching, cradling, and passing drills.</p></article>
+        <article class="activity-card reveal"><span class="activity-icon" aria-hidden="true">◉</span><span class="activity-tag">ALL LEVELS</span><h3>Small-Sided Games</h3><p>Learn by playing, practise decisions, and enjoy friendly game scenarios at every level.</p></article>
+        <article class="activity-card reveal"><span class="activity-icon" aria-hidden="true">↗</span><span class="activity-tag">SKILLS</span><h3>Shooting and Finishing</h3><p>Explore accuracy, technique, and creative ways to finish around goal.</p></article>
+        <article class="activity-card reveal"><span class="activity-icon" aria-hidden="true">⤴</span><span class="activity-tag">FITNESS</span><h3>Speed, Agility, and Fitness</h3><p>Develop movement, coordination, and match-ready fitness through varied activities.</p></article>
+        <article class="activity-card reveal"><span class="activity-icon" aria-hidden="true">✺</span><span class="activity-tag">COMMUNITY</span><h3>Team-Building Activities</h3><p>Get to know one another, build trust, and shape the student community together.</p></article>
+      </div></section>
+
+      <section class="values-section" aria-labelledby="values-title"><img class="values-emblem" src="assets/img/emblem.png" alt="" aria-hidden="true" /><div class="values-inner"><div class="values-heading reveal"><p class="section-number">05 / COMMUNITY</p><p class="eyebrow">The way we play and grow</p><h2 id="values-title">What we<br /><em>value.</em></h2><p>There is room in our group for different starting points, strengths, and ambitions. We want everyone to feel welcome and able to contribute.</p></div><div class="values-grid"><article class="value-item reveal"><span>01</span><h3>Commitment</h3><p>Show up, stay curious, and help the group move forward.</p></article><article class="value-item reveal"><span>02</span><h3>Inclusion</h3><p>Make space for every student, skill level, and background.</p></article><article class="value-item reveal"><span>03</span><h3>Teamwork</h3><p>Support one another on the field and beyond it.</p></article><article class="value-item reveal"><span>04</span><h3>Respect</h3><p>Play with care, listen well, and value the people around us.</p></article><article class="value-item reveal"><span>05</span><h3>Growth</h3><p>Learn from practice, challenges, and each other.</p></article><article class="value-item reveal"><span>06</span><h3>Wellbeing</h3><p>Enjoy movement and build healthy habits together.</p></article></div><div class="welcome-strip reveal"><strong>YOU’RE WELCOME IF YOU’RE A…</strong><p>Complete beginner <span>·</span> Experienced player <span>·</span> Student from any programme <span>·</span> Future coach or sports leader <span>·</span> Student who wants to stay active <span>·</span> Community builder</p></div></div></section>
+
+      <section class="join-section" id="join" aria-labelledby="join-title"><div class="join-inner"><div class="join-copy reveal"><p class="section-number section-number-light">06 / JOIN US</p><p class="eyebrow eyebrow-light">Your next move starts here</p><h2 id="join-title">Join the first<br />team-building<br /><em>journey.</em></h2><p>We are looking for students who are interested in lacrosse and willing to contribute to the development of the group. You do not need to be an expert, but regular participation, enthusiasm, teamwork, and commitment will help us move towards our goal of forming an EdUHK lacrosse sports team during the 2026–27 academic year.</p><div class="join-target"><span>CURRENT GROUP</span><strong>7 committed players</strong><span>WE HOPE TO REACH</span><strong>18 committed players <small>starting from October 2026</small></strong></div></div><div class="join-card reveal"><p class="card-label">TAKE PART IN WHAT’S NEXT</p><h3>Come build<br />with us.</h3><p>Say hello, ask about training, or tell us what you’re interested in.</p><div class="contact-method"><span>PHONE / WHATSAPP</span><a href="tel:+85255079333">+852 5507 9333 <span aria-hidden="true">↗</span></a></div><div class="contact-method"><span>EMAIL</span><a href="mailto:eduhk.lacrosse@gmail.com">eduhk.lacrosse@gmail.com <span aria-hidden="true">↗</span></a></div><!-- Replace these contact actions with an approved Google Form, Instagram account, or student group-chat link when available. --><div class="join-buttons"><a class="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScw_G3XYBwm4fAk4PmHPFVujRkLZhm_XG7UVZ4OKYPaZ5DOIA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Join the Group <span aria-hidden="true">↗</span></a><a class="button button-whatsapp" href="https://wa.me/85255079333" target="_blank" rel="noopener noreferrer">Contact Us on WhatsApp <span aria-hidden="true">↗</span></a><a class="button button-outline" href="mailto:eduhk.lacrosse@gmail.com?subject=Question%20About%20Lacrosse%20Training">Ask About Training <span aria-hidden="true">↗</span></a></div></div></div></section>
+
+      <section class="section faq-section" aria-labelledby="faq-title"><div class="section-heading reveal"><p class="section-number">07 / GOOD TO KNOW</p><div><p class="eyebrow">Questions, answered</p><h2 id="faq-title">Frequently asked<br />questions</h2></div></div><div class="faq-list">
+        <article class="faq-item reveal"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">Do I need previous lacrosse experience?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden><p>No. Beginners are welcome, and we will introduce basic skills, rules, equipment, and game activities step by step.</p></div></article>
+        <article class="faq-item reveal"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">Do I need to own a lacrosse stick?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden><p>Not necessarily. Contact the organising group before attending so we can explain current equipment arrangements and availability. If you are browsing options, the <a href="https://www.nike.com/t/surge-lt-big-kids-lacrosse-complete-stick-hfMVWn" target="_blank" rel="noopener noreferrer">Nike Surge LT lacrosse stick</a> is one example—please check sizing and suitability with us before purchasing.</p></div></article>
+        <article class="faq-item reveal"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">Where should I go before training?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden><p>Gather at the Block E Sports Complex Lower Platform, LP Floor. We will collect equipment before going to the Block E Artificial Turf.</p></div></article>
+        <article class="faq-item reveal"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">What should I wear?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden><p>Wear comfortable sports clothing and suitable athletic shoes. Bring water and any personal sports equipment you already have.</p></div></article>
+        <article class="faq-item reveal"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">Can students from any programme join?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden><p>Yes. The group welcomes students from different programmes who are interested in learning, participating, and helping to build the community.</p></div></article>
+        <article class="faq-item reveal"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">Is this already an official EdUHK team?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" hidden><p>We are currently a student-led lacrosse interest group working towards forming a sports team during the 2026–27 academic year. Official team status and future competitions will depend on the relevant approval and development process.</p></div></article>
+        <article class="faq-item reveal"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">How can I become one of the committed players?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" hidden><p>Contact us by WhatsApp or email, attend training regularly, and speak with the organising group about your interest and availability.</p></div></article>
+      </div></section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="contact-decoration" aria-hidden="true"><span></span><span></span><span></span></div><div class="contact-content reveal"><p class="section-number section-number-light">08 / CONTACT</p><p class="eyebrow eyebrow-light">Your place on the field is waiting</p><h2 id="contact-title">Ready to pick<br />up a <em>stick?</em></h2><p class="contact-intro">Interested in trying lacrosse, returning to the sport, or helping us build the first EdUHK lacrosse team? Contact us and join the journey.</p><div class="contact-overview"><div><span>PHONE / WHATSAPP</span><a href="tel:+85255079333">+852 5507 9333</a></div><div><span>EMAIL</span><a href="mailto:eduhk.lacrosse@gmail.com">eduhk.lacrosse@gmail.com</a></div><div><span>TRAINING</span><p>Monday 18:30–20:30<br />Thursday 10:30–12:30</p></div><div><span>VENUE / ARRIVAL</span><p>Block E Artificial Turf<br />Gather at Block E Sports Complex Lower Platform, LP Floor, to collect equipment.</p></div></div><div class="contact-actions"><a class="button button-light" href="mailto:eduhk.lacrosse@gmail.com?subject=Join%20EdUHK%20Lacrosse%20Interest%20Group">Join the Group <span aria-hidden="true">↗</span></a><a class="button button-dark-outline" href="mailto:eduhk.lacrosse@gmail.com">Send an Email <span aria-hidden="true">↗</span></a><a class="button button-dark-outline" href="https://wa.me/85255079333" target="_blank" rel="noopener noreferrer">Message on WhatsApp <span aria-hidden="true">↗</span></a></div><p class="final-line">Learn together. Play together. Build the team together.</p></div></section>
     </main>
 
-<!--F:START-->
-    <footer class="site-footer">
-      <div class="footer-main">
-        <a class="brand" href="index.html" data-i18n-attr="aria-label:common.brandHome">
-        <img class="brand-mark" src="assets/img/emblem.png" alt="" width="500" height="500" />
-        <span class="brand-name"><span data-i18n="common.brand.name">EdUHK LACROSSE</span><small data-i18n="common.brand.sub">INTEREST GROUP</small></span>
-      </a>
-        <p><span data-i18n="footer.blurb">The Education University of Hong Kong<br />A student-led community working towards forming a lacrosse sports team during the 2026&ndash;27 academic year.</span><strong class="footer-tagline" data-i18n="footer.tagline">Learn &middot; Play &middot; Build</strong></p>
-        <div class="footer-contact">
-          <a href="tel:+85255079333">+852 5507 9333</a>
-          <a href="mailto:eduhk.lacrosse@gmail.com">eduhk.lacrosse@gmail.com</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <nav data-i18n-attr="aria-label:common.footerNav">
-          <a href="about.html" data-i18n="nav.about">About</a>
-          <a href="training.html" data-i18n="nav.training">Training</a>
-          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
-          <a href="join.html" data-i18n="nav.join">Join</a>
-        </nav>
-        <p>&copy; <span id="current-year"></span> EdUHK Lacrosse Interest Group</p>
-      </div>
-      <p class="disclaimer" data-i18n="footer.disclaimer">This website represents a student-led interest group. It is not an official university website unless separately approved by The Education University of Hong Kong.</p>
-    </footer>
-<!--F:END-->
-
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-i18n-attr="aria-label:common.lbLabel" hidden>
-      <button class="lb-close" type="button" data-i18n-attr="aria-label:common.closeLb">✕</button>
-      <button class="lb-prev" type="button" data-i18n-attr="aria-label:common.prevLb">‹</button>
-      <button class="lb-next" type="button" data-i18n-attr="aria-label:common.nextLb">›</button>
-      <figure class="lb-figure">
-        <img class="lb-img" src="" alt="" />
-        <figcaption class="lb-caption"><span class="lb-count"></span></figcaption>
-      </figure>
-    </div>
-
-    <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/main.js" defer></script>
+    <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#home" aria-label="EdUHK Lacrosse Interest Group home"><img class="brand-mark" src="assets/img/emblem.png" alt="" /><span class="brand-name">EdUHK LACROSSE<small>INTEREST GROUP</small></span></a><p>The Education University of Hong Kong<br />A student-led community working towards forming a lacrosse sports team during the 2026–27 academic year.<br /><strong class="footer-tagline">Learn · Play · Build</strong></p><div class="footer-contact"><a href="tel:+85255079333">+852 5507 9333</a><a href="mailto:eduhk.lacrosse@gmail.com">eduhk.lacrosse@gmail.com</a></div></div><div class="footer-bottom"><nav aria-label="Footer navigation"><a href="#about">About</a><a href="#goal">Our Goal</a><a href="#training">Training</a><a href="#join">Join Us</a><a href="#contact">Contact</a></nav><p>© <span id="current-year"></span> EdUHK Lacrosse Interest Group</p></div><p class="disclaimer">This website represents a student-led interest group. It is not an official university website unless separately approved by The Education University of Hong Kong.</p></footer>
   </body>
 </html>
